@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Collections;
 
 public class EjemploArreglos {
     public static void main(String[] args) {
@@ -12,6 +13,7 @@ public class EjemploArreglos {
         productos[4] = "Mouse";
 
         Arrays.sort(productos);
+        Collections.reverse(Arrays.asList(productos));
 
         System.out.println("productos[0] = " + productos[0]);
         System.out.println("productos[1] = " + productos[1]);
