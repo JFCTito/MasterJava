@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class EjemploMatrices {
     public static void main(String[] args) {
 
@@ -7,9 +9,11 @@ public class EjemploMatrices {
         System.out.println("numero de columnas: " + numeros[0].length);
         int contador = 0;
         for (int[] a : numeros){
+
             for (int i=0; i<a.length; i++){
                  a[i]= ++contador;
             }
+            System.out.println("a = " + Arrays.toString(a));
         }
 
         System.out.println("contador = " + contador);
@@ -20,5 +24,8 @@ public class EjemploMatrices {
             }
             System.out.println();
         }
+
+        System.out.println("numeros = " + Arrays.deepToString(numeros));
+
     }
 }
