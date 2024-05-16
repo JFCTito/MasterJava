@@ -25,7 +25,9 @@ public class EjemploMatrices {
             System.out.println();
         }
 
+
         System.out.println("numeros = " + Arrays.deepToString(numeros));
 
+        System.exit(0);
     }
 }
