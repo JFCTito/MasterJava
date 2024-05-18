@@ -4,7 +4,7 @@ public class EjemploArregloNotasAlumnos {
     public static void main(String[] args) {
 
         double[] claseMatematicas, claseHistoria, claseLenguaje;
-        double sumNotasMatematicas = 0, sumNotasHistoria = 0, sumNotasLenguajes = 0;
+        double sumNotasMatematicas = 0.0, sumNotasHistoria = 0.0, sumNotasLenguajes = 0.0;
         claseMatematicas = new double[7];
         claseHistoria = new double[7];
         claseLenguaje = new double[7];
