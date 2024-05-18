@@ -4,7 +4,7 @@ public class EjemploArregloNotasAlumnos {
     public static void main(String[] args) {
 
         double[] claseMatematicas, claseHistoria, claseLenguaje;
-        int sumNotasMatematicas = 0, sumNotasHistoria = 0, sumNotasLenguajes = 0;
+        double sumNotasMatematicas = 0, sumNotasHistoria = 0, sumNotasLenguajes = 0;
         claseMatematicas = new double[7];
         claseHistoria = new double[7];
         claseLenguaje = new double[7];
@@ -39,5 +39,9 @@ public class EjemploArregloNotasAlumnos {
         System.out.println("Promedio clase de Lenguaje: " + promedioLenguaje);
         System.out.println("Promedio total de curso: " + ((promedioMatematica + promedioHistoria + promedioLenguaje) / 3));
 
+        System.out.println("Ingrese el identificador del alumno (de 0 a 6):");
+        int id = scanner.nextInt();
+        double promedioAlumno = (claseMatematicas[id] + claseHistoria[id] + claseLenguaje[id]) / 3;
+        System.out.println("Promedio del alumno id " + id + "es: " + promedioAlumno);
     }
 }
