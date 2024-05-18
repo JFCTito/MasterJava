@@ -30,5 +30,14 @@ public class EjemploArregloNotasAlumnos {
             sumNotasHistoria += claseHistoria[i];
             sumNotasLenguajes += claseLenguaje[i];
         }
+
+        double promedioMatematica = (sumNotasMatematicas/claseMatematicas.length);
+        double promedioHistoria = (sumNotasHistoria/claseHistoria.length);
+        double promedioLenguaje = (sumNotasLenguajes/claseLenguaje.length);
+        System.out.println("Promedio clase de matemáticas: " + promedioMatematica);
+        System.out.println("Promedio clase de Historia: " + promedioHistoria);
+        System.out.println("Promedio clase de Lenguaje: " + promedioLenguaje);
+        System.out.println("Promedio total de curso: " + ((promedioMatematica + promedioHistoria + promedioLenguaje) / 3));
+
     }
 }
